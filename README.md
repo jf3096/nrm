@@ -1,4 +1,4 @@
-nrm -- NPM registry manager
+nrm-kad -- NPM registry manager for KAD
 ===
 
 [![NPM version][npm-image]][npm-url]
@@ -16,12 +16,12 @@ Or you can configure it in your HOME directory's .yarnrc
 ## Install
 
 ```
-$ npm install -g nrm
+$ npm install -g kad-nrm
 ```
 
 ## Example
 ```
-$ nrm ls
+$ kad-nrm ls
 
 * npm -----  https://registry.npmjs.org/
   cnpm ----  http://r.cnpmjs.org/
@@ -29,11 +29,12 @@ $ nrm ls
   nj ------  https://registry.nodejitsu.com/
   rednpm -- http://registry.mirror.cqupt.edu.cn
   skimdb -- https://skimdb.npmjs.com/registry
+  kadnpm -- http://npm.360kad.com/
 
 ```
 
 ```
-$ nrm use cnpm  //switch registry to cnpm
+$ kad-nrm use cnpm  //switch registry to cnpm
 
     Registry has been set to: http://r.cnpmjs.org/
 
@@ -42,7 +43,7 @@ $ nrm use cnpm  //switch registry to cnpm
 ## Usage
 
 ```
-Usage: nrm [options] [command]
+Usage: kad-nrm [options] [command]
 
   Commands:
 
@@ -67,19 +68,12 @@ Usage: nrm [options] [command]
 * [nodejitsu](https://www.nodejitsu.com)
 * [taobao](http://npm.taobao.org/)
 * [rednpm](http://npm.mirror.cqupt.edu.cn)
+* [kadnpm](http://npm.360kad.com/)
 
 
 ## Notice
 
 When you use an other registry, you can not use the `publish` command.
 
-## TODO
-
-* When publish proxy to npm official registry
-
 ## LICENSE
 MIT
-
-
-[npm-image]: https://img.shields.io/npm/v/nrm.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/nrm
